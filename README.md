@@ -61,9 +61,7 @@ Complexitatea unui cuvânt este un criteriu subiectiv și depinde de mulți fact
 <a name="features"></a> 
 ## Caracteristici
 Caracteristicile pentru un cuvânt sunt sub forma unui vector:
-$$
-\mathbf{x} = \{ x_1, \cdots, x_n \}
-$$
+$$\mathbf{x} = \{ x_1, \cdots, x_n \}$$
 
 unde fiecare componentă $x_i$ e o valoare numerică care poate fi extrasă prin euristici:
 
