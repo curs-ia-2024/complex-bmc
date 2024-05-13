@@ -136,10 +136,10 @@ $$R_{py}^{2}=1-\frac{ \sum_{i}^{m}(y_i-p_i)^{2} }{ \sum_{i}^{m}(y_{i}-{\bar{y}})
 unde este media valorilor reale este $$\bar{y} = \frac{1}{m}\sum_{i}^{m}y$$ 
 
 Și coeficientul de corelație Pearson:
-$$\rho_{py}=\frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})(y_{i}-{\bar{y}})}{\sqrt{\sum_{i=1}^{m}(p_{i}-{\bar{p}})^{2}}\sqrt{\sum_{i=1}^{m}(y_{i}-{\bar{y}})^{2}}}$$
+$$\rho_{py}=\frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})(y_{i}-{\bar{y}})}{\sqrt{\sum_{i=1}^{m}{(p_{i}-{\bar{p}})}^{2}}\sqrt{\sum_{i=1}^{m}(y_{i}-{\bar{y}})^{2}}}$$
 forumulat de asemenea și ca cosinusul unghiului dintre valorile standardizate (z-score) după medie și deviația standard ale predicțiilor (sau valorilor reale):
 
-$$\frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})}{\sqrt{\sum_{i=1}^{m}(p_{i}-{\bar{p}})^{2}}} = \frac{p-\mu_p}{\sigma_p}$$
+$$\frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})}{\sqrt{\sum_{i=1}^{m}{(p_{i}-{\bar{p}})}^{2}}} = \frac{p-\mu_p}{\sigma_p}$$
 
 Coeficientul de corelație poate varia între -1, 1 și are următoarele interpretări:
 - 0 când valorile nu sunt corelate
