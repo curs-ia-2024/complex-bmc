@@ -129,7 +129,11 @@ Pentru un set de predicții: $$p = \{p_1, \cdots, p_m\}$$
 și un set de valori reale care trebuiau prezise:  $$y = \{y_1, \cdots, y_m\}$$
 avem coeficientul de determinare dat de mean squared error normalizată după un predictor constant:
 
-$$R_{py}^{2}=1-\frac{ \sum^{m}_{i}(y_i-p_i)^{2} }{ \sum_{i}^{m}(y_{i}-{\bar{y}})^{2} }$$
+$$
+\begin{equation}
+R_{py}^{2}=1-\frac{ \sum_{i}^{m}(y_i-p_i)^{2} }{ \sum_{i}^{m}(y_{i}-{\bar{y}})^{2} }
+\end{equation}
+$$
 
 unde este media valorilor reale este $$\bar{y} = \frac{1}{m}\sum_{i}^{m}y$$ 
 
