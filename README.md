@@ -60,8 +60,11 @@ Complexitatea unui cuvânt este un criteriu subiectiv și depinde de mulți fact
 
 <a name="features"></a> 
 ## Caracteristici
-Caracteristicile pentru un cuvânt sunt sub forma unui vector: 
-$$ \mathbf{x} = \{ x_1, \cdots, x_n \} $$
+Caracteristicile pentru un cuvânt sunt sub forma unui vector:
+$$
+\mathbf{x} = \{ x_1, \cdots, x_n \}
+$$
+
 unde fiecare componentă $x_i$ e o valoare numerică care poate fi extrasă prin euristici:
 
 - cu privire la cuvânt: frecvență într-un corpus de dimensiuni mari, frecvență într-un corpus de texte pentru copii, lungime, nr de silabe, nr de consoane, dacă e abreviere
@@ -130,12 +133,13 @@ avem coeficientul de determinare dat de mean squared error normalizată după un
 
 $$R_{py}^{2}=1-\frac{ \sum_{i}^{m}(y_i-p_i)^{2} }{ \sum_{i}^{m}(y_{i}-{\bar{y}})^{2} }$$
 
-unde este media valorilor reale este $$\bar{y} = \frac{1}{m}\sum_{i}^{m}y $$ 
+unde este media valorilor reale este $$\bar{y} = \frac{1}{m}\sum_{i}^{m}y$$ 
 
 Și coeficientul de corelație Pearson:
 $$\rho_{py}=\frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})(y_{i}-{\bar{y}})}{\sqrt{\sum_{i=1}^{m}(p_{i}-{\bar{p}})^{2}}\sqrt{\sum_{i=1}^{m}(y_{i}-{\bar{y}})^{2}}}$$
 forumulat de asemenea și ca cosinusul unghiului dintre valorile standardizate (z-score) după medie și deviația standard ale predicțiilor (sau valorilor reale):
-$$ \frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})}{\sqrt{\sum_{i=1}^{m}(p_{i}-{\bar{p}})^{2}}} = \frac{p-\mu_p}{\sigma_p} $$
+
+$$\frac{\sum_{i=1}^{m}(p_{i}-{\bar{p}})}{\sqrt{\sum_{i=1}^{m}(p_{i}-{\bar{p}})^{2}}} = \frac{p-\mu_p}{\sigma_p}$$
 
 Coeficientul de corelație poate varia între -1, 1 și are următoarele interpretări:
 - 0 când valorile nu sunt corelate
