@@ -60,10 +60,9 @@ Complexitatea unui cuvânt este un criteriu subiectiv și depinde de mulți fact
 
 <a name="features"></a> 
 ## Caracteristici
-Caracteristicile pentru un cuvânt sunt sub forma unui vector:
-$$ 
-\mathbf{x} = \{ x_1, \cdots, x_n\}
-$$ unde fiecare componentă x_i e o valoare numerică care poate fi extrasă prin euristici:
+Caracteristicile pentru un cuvânt sunt sub forma unui vector: 
+$$ \mathbf{x} = \{ x_1, \cdots, x_n \} $$
+unde fiecare componentă $x_i$ e o valoare numerică care poate fi extrasă prin euristici:
 
 - cu privire la cuvânt: frecvență într-un corpus de dimensiuni mari, frecvență într-un corpus de texte pentru copii, lungime, nr de silabe, nr de consoane, dacă e abreviere
 - cu privire la sintaxă: parte de vorbire, funcția în propozție
@@ -130,6 +129,7 @@ Pentru un set de predicții: $$p = \{p_1, \cdots, p_m\}$$
 avem coeficientul de determinare dat de mean squared error normalizată după un predictor constant:
 
 $$R_{py}^{2}=1-\frac{ \sum_{i}^{m}(y_i-p_i)^{2} }{ \sum_{i}^{m}(y_{i}-{\bar{y}})^{2} }$$
+
 unde este media valorilor reale este $$\bar{y} = \frac{1}{m}\sum_{i}^{m}y $$ 
 
 Și coeficientul de corelație Pearson:
